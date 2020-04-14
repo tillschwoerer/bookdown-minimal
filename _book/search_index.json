@@ -1,0 +1,5 @@
+[
+["index.html", "Paged printing of data frames in bookdown 1 Intro", " Paged printing of data frames in bookdown 1 Intro This is a minimal reproducible example related to this stackoverflow question. If new_session: no (the default) is set in the file _bookdown.yml, then data frames are printed with paging (the desired format). However, if we set new_session: yes, then paging is not applied. Any help on how to achieve paging under these circumstances is appreciated. "],
+["print-iris-data.html", "2 Print iris data", " 2 Print iris data iris "],
+["print-mtcars-data.html", "3 Print mtcars data", " 3 Print mtcars data mtcars "]
+]

@@ -1,8 +1,14 @@
 ---
-title: "My Book Title"
-author: "My Name"
+title: "Paged printing of data frames in bookdown"
 site: bookdown::bookdown_site
 documentclass: book
-output: 
-  bookdown::gitbook: default
+output:
+  bookdown::gitbook:
+    df_print: paged
 ---
+
+# Intro
+
+This is a minimal reproducible example related to [this stackoverflow question](https://stackoverflow.com/questions/61204682/how-can-i-use-paged-printing-of-data-frames-in-bookdown-when-markdown-files-are).
+
+If `new_session: no` (the default) is set in the file _bookdown.yml, then data frames are printed with paging (the desired format). However, if we set `new_session: yes`, then paging is not applied. Any help on how to achieve paging under these circumstances is appreciated.
