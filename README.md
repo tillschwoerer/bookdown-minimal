@@ -1,2 +1,29 @@
+## Short description of problem
+
 This is a minimal reproducible example related to [this stackoverflow question](https://stackoverflow.com/questions/61204682/how-can-i-use-paged-printing-of-data-frames-in-bookdown-when-markdown-files-are).
+
+
+# More detailed description of problem
+
+I am using **bookdown** to combine a number of Rmd files into a gitbook. Specifically, I want to use the **"Knit and Merge" (K-M)** approach, described [here](https://bookdown.org/yihui/bookdown/new-session.html): Rmd files are knitted in separate R sessions, and merged afterwards. To do the K-M approach I have specified `new_session: yes` in the _bookdown.yml file. 
+
+The opposite would be the "Merge and Knit" approach (M-K), where the Rmd files are first merged and then knitted in a common R session. For several reasons, I don't want to use this approach.
+
+**My problem:** I would like data frames to be printed in paged format, but this does not seem to work using the K-M apprach. 
+
+In case of the opposite M-K approach, this can be achieved by specifying `df_print: paged` in the YAML header of the index.Rmd file. My YAML header looks like this: 
+
+```
+---
+title: "My Book Title"
+author: "My Name"
+site: bookdown::bookdown_site
+documentclass: book
+output:
+  bookdown::gitbook:
+    df_print: paged
+---
+```
+
+Where can/should I specify `df_print: paged` for bookdown's K-M approach?
 
