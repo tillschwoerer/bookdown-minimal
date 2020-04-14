@@ -1,5 +1,7 @@
 # Print iris data
 
+The iris data is printed in the desired paged format, if the file _bookdown.yml defines `new_session = no`.
+
 ```{r}
 iris
 ```
