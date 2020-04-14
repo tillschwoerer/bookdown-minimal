@@ -1,17 +1,14 @@
 ---
-title: "A Book"
-author: "Frida Gomam"
+title: "Paged printing of data frames in bookdown"
 site: bookdown::bookdown_site
 documentclass: book
 output:
-  bookdown::gitbook: default
-  #bookdown::pdf_book: default
+  bookdown::gitbook:
+    df_print: paged
 ---
 
-# Hello World
+# Intro
 
-Hi.
+This is a minimal reproducible example related to [this stackoverflow question](https://stackoverflow.com/questions/61204682/how-can-i-use-paged-printing-of-data-frames-in-bookdown-when-markdown-files-are).
 
-Bye.
-
-<!-- If you need PDF output, uncomment bookdown::pdf_book above in YAML. You will need a LaTeX installation, e.g., https://yihui.name/tinytex/ -->
+If `new_session: no` (the default) is set in the file _bookdown.yml, then data frames are printed with paging (the desired format). However, if we set `new_session: yes`, then paging is not applied. Any help on how to achieve paging under these circumstances is appreciated.

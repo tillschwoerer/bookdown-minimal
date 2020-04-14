@@ -1,0 +1,6 @@
+# Print iris data
+
+```{r}
+iris
+```
+

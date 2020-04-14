@@ -1,0 +1,6 @@
+# Print mtcars data
+
+```{r}
+mtcars
+```
+
